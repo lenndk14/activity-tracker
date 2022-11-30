@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracking Dashboard</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="container">
+        <div class="grid">
+            <div class="report-card">
+                <div class="profile-wrapper">
+                    <img src="/images/image-jeremy.png" alt="profile-picture jeremy" class="profile-img">
+                    <div class="profile-text">
+                        <p>Report for</p>
+                        <p class="name">Jeremy Robson</p>
+                    </div>
+                </div>
+                <div class="time-period-wrapper">
+                    <div class="time-link">
+                        <p class="profile-time-period daily" data-period="daily">Daily</p>
+                    </div>
+                    <div class="time-link">
+                        <p class="profile-time-period weekly" data-period="weekly">Weekly</p>
+                    </div>
+                    <div class="time-link">
+                        <p class="profile-time-period monthly" data-period="monthly">Monthly</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-stats">
+                    <div class="card-stats-a">
+                        <div class="title work">Work</div>
+                        <img src="/images/icon-ellipsis.svg" alt="ellipsis" class="card-img">
+                    </div>
+                    <div class="card-stats-b">
+                        <h1 class="hours"><span class="hrs" id="hrs-work">0</span>hrs</h1>
+                        <p class="card-time-period"><span class="time">Previous</span> - <span class="pre-hours" id="prev-work">10</span>hrs</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card play">
+                <div class="card-stats">
+                    <div class="card-stats-a">
+                        <div class="title work">Play</div>
+                        <img src="/images/icon-ellipsis.svg" alt="ellipsis" class="card-img">
+                    </div>
+                    <div class="card-stats-b">
+                        <h1 class="hours"><span class="hrs" id="hrs-play">0</span>hrs</h1>
+                        <p class="card-time-period"><span class="time">Previous</span> - <span class="pre-hours" id="prev-play">10</span>hrs</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card study">
+                <div class="card-stats">
+                    <div class="card-stats-a">
+                        <div class="title work">Study</div>
+                        <img src="/images/icon-ellipsis.svg" alt="ellipsis" class="card-img">
+                    </div>
+                    <div class="card-stats-b">
+                        <h1 class="hours"><span class="hrs" id="hrs-study">0</span>hrs</h1>
+                        <p class="card-time-period"><span class="time">Previous</span> - <span class="pre-hours" id="prev-study">10</span>hrs</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card exercise">
+                <div class="card-stats">
+                    <div class="card-stats-a">
+                        <div class="title work">Exercise</div>
+                        <img src="/images/icon-ellipsis.svg" alt="ellipsis" class="card-img">
+                    </div>
+                    <div class="card-stats-b">
+                        <h1 class="hours"><span class="hrs" id="hrs-exercise">0</span>hrs</h1>
+                        <p class="card-time-period"><span class="time">Previous</span> - <span class="pre-hours" id="prev-exercise">10</span>hrs</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card social">
+                <div class="card-stats">
+                    <div class="card-stats-a">
+                        <div class="title work">Social</div>
+                        <img src="/images/icon-ellipsis.svg" alt="ellipsis" class="card-img">
+                    </div>
+                    <div class="card-stats-b">
+                        <h1 class="hours"><span class="hrs" id="hrs-social">0</span>hrs</h1>
+                        <p class="card-time-period"><span class="time">Previous</span> - <span class="pre-hours" id="prev-social">10</span>hrs</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card self">
+                <div class="card-stats">
+                    <div class="card-stats-a">
+                        <div class="title work">Self-care</div>
+                        <img src="/images/icon-ellipsis.svg" alt="ellipsis" class="card-img">
+                    </div>
+                    <div class="card-stats-b">
+                        <h1 class="hours"><span class="hrs" id="hrs-selfcare">0</span>hrs</h1>
+                        <p class="card-time-period"><span class="time">Previous</span> - <span class="pre-hours" id="prev-selfcare">10</span>hrs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="/script.js"></script>
+</body>
+</html>

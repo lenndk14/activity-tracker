@@ -1,0 +1,280 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+}
+
+:root {
+    --Blue: hsl(246, 80%, 60%);
+    --Lightorange: hsl(15, 100%, 70%);
+    --Softblue: hsl(195, 74%, 62%);
+    --Lightred: hsl(348, 100%, 68%);
+    --Limegreen: hsl(145, 58%, 55%);
+    --Violet: hsl(264, 64%, 52%);
+    --Softorange: hsl(43, 84%, 65%);
+
+    --Verydarkblue: hsl(226, 43%, 10%);
+    --Darkblue: hsl(235, 46%, 20%);
+    --Desaturatedblue: hsl(235, 45%, 61%);
+    --PaleBlue: hsl(236, 100%, 87%);
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-size: 1.125rem;
+    font-family: 'Rubik', sans-serif;
+
+    background-color: var(--Verydarkblue);
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+/* profile card */
+
+.report-card {
+    background-color: var(--Darkblue);
+    border-radius: 15px;
+    margin-top: 2em;
+
+    max-width: 319px;
+    grid-area: profile;
+}
+
+.card-container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.profile-wrapper {
+    background-color: var(--Blue);
+    border-radius: 15px;
+
+    display: flex;
+    align-items: center;
+    padding: 1.5em 1em;
+}
+
+.profile-img {
+    height: 70px;
+
+    border-radius: 100%;
+    border: 3px solid #FFF;
+}
+
+.profile-text {
+    padding: 1em;
+    color: #FFF;
+
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.name {
+    font-size: 1.5rem;
+}
+
+.time-period-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.time-link {
+    text-decoration: none;
+}
+
+.profile-time-period {
+    padding: 1.5em 1em;
+    color: var(--Desaturatedblue);
+
+    transition-duration: 250ms;
+}
+
+.profile-time-period:hover {
+    color: #FFF;
+}
+
+/* card template */
+
+.card {
+    margin-top: 2em;
+    background-color: var(--Lightorange);
+    background-image: url(/images/icon-work.svg);
+    background-repeat: no-repeat;
+    background-position: top -10px right 1em;
+
+    height: 180px;
+    border-radius: 15px;
+    max-width: 319px;
+
+    display: flex;
+    align-items: flex-end;
+}
+
+.card-stats {
+    background-color: var(--Darkblue);
+
+    height: 140px;
+    width: 100%;
+
+    border-radius: 15px;
+    transform: translateY(2px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    transition-duration: 300ms;
+}
+
+.card-stats:hover {
+    background-color: var(--Desaturatedblue);
+}
+
+.card-stats-a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-weight: 500;
+    color: #FFF;
+
+    padding: 0.5em 1em;
+}
+
+.card-stats-b {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0.5em 1em;
+}
+
+.hours {
+    color: #FFF;
+
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.card-time-period {
+    color: var(--PaleBlue);
+}
+
+/* card variants */
+
+.play {
+    background-color: var(--Softblue);
+    background-image: url(/images/icon-play.svg);
+
+    grid-area: play;
+}
+
+.study {
+    background-color: var(--Lightred);
+    background-image: url(/images/icon-study.svg);
+
+    grid-area: study;
+}
+
+.exercise {
+    background-color: var(--Limegreen);
+    background-image: url(/images/icon-exercise.svg);
+
+    grid-area: exercise;
+}
+
+.social {
+    background-color: var(--Violet);
+    background-image: url(/images/icon-social.svg);
+
+    grid-area: social;
+}
+
+.self {
+    background-color: var(--Softorange);
+    background-image: url(/images/icon-self-care.svg);
+
+    grid-area: self;
+}
+
+@media (min-width: 1440px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        height: 100vh;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: 
+        "profile work play study"
+        "profile exercise social self";
+        
+        gap: 2em;
+    }
+
+    .report-card {
+        margin: 0;
+        height: 600px;
+    }
+
+    .name {
+        font-size: 3rem;
+    }
+
+    .profile-img {
+        margin: 1em;
+        height: 100px;
+    }
+
+    .profile-wrapper {
+        height: 70%;
+
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .profile-time-period {
+        padding: 0.8em 2em;
+    }
+
+    .time-period-wrapper {
+        height: 30%;
+
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .card {
+        height: 275px;
+        margin: 0;
+    }
+
+    .card-stats {
+        height: 230px;
+        width: 319px;
+
+        justify-content: space-around;
+    }
+
+    .card-stats-b {
+        flex-direction: column;
+        align-items: flex-start;
+
+        margin-bottom: 1em;
+    }
+
+    .hours {
+        font-size: 4rem;
+    }
+}
