@@ -10,3 +10,10 @@ This exercise was a challenge on frontendmentor.io which shows the design templa
 It also includes the .json data and image files, but apart from that I had to figure out how to make it work myself.
 This project is made using HTML, CSS and JavaScript.
 
+### Activity Tracker Desktop
+
+![time-tracker-desktop](https://user-images.githubusercontent.com/107483021/206524040-713e6374-0366-4b03-83fc-085572361b33.png)
+
+### Activity Tracker Mobile
+
+![time-tracker-mobile](https://user-images.githubusercontent.com/107483021/206524073-b90eb6de-1ede-4005-ae9a-03df1582c277.png)
