@@ -7,7 +7,7 @@ This also compares time spent on these activities from the previous day, week or
 ## Front-end Mentor
 
 This exercise was a challenge on frontendmentor.io which shows the design template in different screen sizes, active states etc.
-It also includes the .json data and image files, but apart from that I had to figure out how to make it work myself.
+It also includes the JSON data and image files, but apart from that I had to figure out how to make it work myself.
 This project is made using HTML, CSS and JavaScript.
 
 ### Activity Tracker Desktop
