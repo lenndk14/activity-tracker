@@ -1,6 +1,6 @@
 # Activity Tracker
 
-The activity tracker uses .json data to catogorize time spent on different activities such as; work, play, study etc.
+The activity tracker uses JSON data to catogorize time spent on different activities such as; work, play, study etc.
 It has 3 button that you can press to change the overview from daily to weekly or monthly and view your statistics. 
 This also compares time spent on these activities from the previous day, week or month. 
 
